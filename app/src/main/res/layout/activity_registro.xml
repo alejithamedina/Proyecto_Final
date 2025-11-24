@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="@color/blanco">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoRegistro"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_logo"
+        android:contentDescription="Logo"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Nombre -->
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="@color/gris_hint"
+        android:backgroundTint="@color/azul_oscuro"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="@color/gris_hint"
+        android:backgroundTint="@color/azul_oscuro"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="@color/gris_hint"
+        android:backgroundTint="@color/azul_oscuro"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Contraseña -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="@color/gris_hint"
+        android:backgroundTint="@color/azul_oscuro"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Botón Registrarse -->
+    <Button
+        android:id="@+id/btnRegistrarUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/azul_oscuro"/>
+</LinearLayout>

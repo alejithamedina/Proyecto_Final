@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="@color/white">
+
+    <!-- Imagen de perfil -->
+    <ImageView
+        android:id="@+id/logoperfil"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_person"
+        android:contentDescription="Foto de perfil"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Nombre -->
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del usuario"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/black"/>
+
+    <!-- Apellido -->
+    <TextView
+        android:id="@+id/textViewApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido del usuario"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/black"/>
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="correo@ejemplo.com"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/black"/>
+
+    <!-- Botón Registrar nuevo usuario -->
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar nuevo usuario"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"/>
+
+    <!-- Botón Recuperar contraseña -->
+    <Button
+        android:id="@+id/btnOlvide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Olvidé mi contraseña"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
+
+
+
+
+

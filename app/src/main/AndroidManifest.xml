@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proyectoasistrack">
+
+    <application
+        android:icon="@mipmap/ic_logo"
+        android:roundIcon="@mipmap/ic_logo"
+        android:label="AsisTrack"
+        android:theme="@style/Theme.ProyectoAsisTrack">
+
+        <!-- LOGIN como pantalla inicial -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Home -->
+        <activity android:name=".ui.HomeActivity" />
+
+        <!-- Módulos -->
+        <activity android:name=".ui.AsistenciaActivity" />
+        <activity android:name=".ui.AsignaturasActivity" />
+        <activity android:name=".ui.DocentesActivity" />
+        <activity android:name=".ui.NotificacionesActivity" />
+        <activity android:name=".ui.EstudiantesActivity" />
+        <activity android:name=".ui.ReportesActivity" />
+        <activity android:name=".ui.PerfilActivity" />
+        <activity android:name=".ui.HorariosActivity" />
+        <activity android:name=".ui.RegistroActivity" />
+        <activity android:name=".ui.RecuperarContrasenaActivity" />
+
+
+
+    </application>
+
+</manifest>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

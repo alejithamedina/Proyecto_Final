@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logoAsistencia"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_asistencia"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Título módulo -->
+        <TextView
+            android:id="@+id/tvTituloAsistencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Módulo Asistencia"
+            android:textSize="24sp"
+            android:textColor="@color/azul_oscuro"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botón Agregar -->
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Asistencia"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/azul_oscuro"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Contenedor donde se muestran los registros -->
+        <LinearLayout
+            android:id="@+id/contenedorAsistencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"/>
+
+
+        <!-- BOTÓN DEVOLVER -->
+        <ImageButton
+            android:id="@+id/btnDevolverAsistencia"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_devolver"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:padding="0dp"
+            android:contentDescription="Volver" />
+
+
+    </LinearLayout>
+</ScrollView>
+

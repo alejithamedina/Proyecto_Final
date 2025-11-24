@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título del módulo -->
+        <TextView
+            android:id="@+id/tvTituloNotificaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Módulo Notificaciones"
+            android:textSize="24sp"
+            android:textColor="@color/azul_oscuro"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/logoEstudiante"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_notificacion"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Botón Agregar -->
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Notificación"
+            android:backgroundTint="@color/azul_oscuro"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Contenedor de notificaciones -->
+        <LinearLayout
+            android:id="@+id/contenedorNotificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"/>
+
+        <ImageButton
+        android:id="@+id/btnDevolverNotificaciones"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_devolver"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:padding="0dp"
+        android:contentDescription="Volver" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+

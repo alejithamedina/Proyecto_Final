@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/blanco">
+
+    <!-- LOGO DEL MÓDULO -->
+    <ImageView
+        android:id="@+id/logoDocente"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_docente"
+        android:contentDescription="Logo del módulo Docentes"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- TÍTULO DEL MÓDULO -->
+    <TextView
+        android:id="@+id/tituloDocentes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Módulo Docentes"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/azul_oscuro"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- BOTÓN AGREGAR -->
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Docente"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:textColor="@color/blanco"/>
+
+    <!-- SCROLLVIEW CON UN SOLO HIJO (contenedor de docentes) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/contenedorDocentes"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"/>
+    </ScrollView>
+
+    <!-- BOTÓN DEVOLVER ABAJO -->
+    <ImageButton
+        android:id="@+id/btnDevolverDocentes"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_devolver"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:padding="0dp"
+        android:contentDescription="Volver"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
+
+
+
+
+
+
